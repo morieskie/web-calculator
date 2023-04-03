@@ -1,0 +1,44 @@
+button {
+  font-family: Roboto+Mono, sans-serif;
+  cursor: pointer;
+  font-size: 24px;
+  border: 1px solid #184758;
+  outline: none;
+  background-color: #55727e;
+  color: #e5eaec;
+  background-image: linear-gradient(#55727e,#184758, transparent);
+  padding: 10px 0;
+}
+
+button:hover {
+  background-color: #305a69;
+  background-image: linear-gradient(#305a69, transparent);
+}
+
+button.operator {
+  background-color: #ff9f0b;
+  background-image: linear-gradient(#ff9f0b, transparent);
+}
+
+button.operator:hover {
+  background-color: #e68f0a;
+  background-image: linear-gradient(transparent, transparent);
+}
+
+button.noHover {
+  background-color: transparent;
+  background-image: none;
+  height: 100%;
+}
+
+.br-bottom-left {
+  border-bottom-left-radius: 10px;
+}
+
+.br-bottom-right {
+  border-bottom-right-radius: 10px;
+}
+
+.two-cols {
+  grid-column: span 2;
+}

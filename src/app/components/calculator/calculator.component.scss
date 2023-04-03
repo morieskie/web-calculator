@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto+Mono:wght@50&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Michroma, sans-serif;
+  font-weight: normal;
+}
+
+#wrapper {
+  margin-top: 20px;
+}
+
+.calc-layout {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: minmax(30px, auto) repeat(5, 45px);
+}
+
+
+

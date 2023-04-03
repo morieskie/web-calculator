@@ -1,12 +1,16 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import {CalculatorModule} from "./components/calculator/calculator.module";
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
       ],
+      imports:[
+        CalculatorModule
+      ]
     }).compileComponents();
   });
 
@@ -26,6 +30,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('calc app is running!');
+    expect(compiled.querySelector('button')?.textContent).toContain('CA');
   });
 });

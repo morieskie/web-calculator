@@ -1,0 +1,20 @@
+<button id="btnClear" (click)="onReset()">{{entries.length > 0 ? 'C' : 'CA'}}</button>
+<button class="noHover"></button>
+<button id="btnDel" (click)="onDelete()">⌫</button>
+<button id="btnDivide" (click)="onOperate('/')" class="operator">÷</button>
+<button id="btnSeven" (click)="onEntry(7)">7</button>
+<button id="btnEight" (click)="onEntry(8)">8</button>
+<button id="btnNine" (click)="onEntry(9)">9</button>
+<button id="btnMultiply" (click)="onOperate('*')" class="operator">x</button>
+<button id="btnFour" (click)="onEntry(4)">4</button>
+<button id="btnFive" (click)="onEntry(5)">5</button>
+<button id="btnSix" (click)="onEntry(6)">6</button>
+<button id="btnMinus" (click)="onOperate('-')" class="operator">-</button>
+<button id="btnOne" (click)="onEntry(1)">1</button>
+<button id="btnTwo" (click)="onEntry(2)">2</button>
+<button id="btnThree" (click)="onEntry(3)">3</button>
+<button id="btnPlus" (click)="onOperate('+')" class="operator">+</button>
+<button id="btnZero" (click)="onEntry(0)" class="two-cols br-bottom-left">0</button>
+<button id="btnDot" (click)="addDot()">.</button>
+<button id="btnEquals" (click)="onEquals()" class="operator br-bottom-right">=
+</button>
